@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 
 env:
-  DEV_ENVIRONMENT: Monday
+  DOTNET_ENVIRONMENT: Monday
 
 jobs:
   Explore-GitHub-Actions:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Run .NET Console App
         run: dotnet run
+
+      - name: Run JS App
+        run: node index
