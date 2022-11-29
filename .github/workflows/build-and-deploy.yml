@@ -15,3 +15,6 @@ jobs:
 
       - name: Build .NET Console App
         run: dotnet build
+
+      - name: Run .NET Console App
+        run: dotnet run
